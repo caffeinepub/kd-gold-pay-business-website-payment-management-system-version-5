@@ -1,0 +1,20 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router integration, optimized loading states, enhanced authentication flow with smooth transitions, and production-ready error handling for Version 5.",
+  "frontend/src/hooks/useQueries.ts": "Optimized React Query hooks with enhanced caching strategies (staleTime, refetchOnWindowFocus), optimistic updates for mutations, and improved error handling with rollback support.",
+  "frontend/src/components/Header.tsx": "Enhanced header component with scroll-based styling, smooth transitions, improved mobile navigation with SheetClose, and optimized authentication controls for better UX.",
+  "frontend/src/components/Footer.tsx": "Refined footer component with improved social media links, smooth hover transitions, and consistent branding with enhanced visual polish.",
+  "frontend/src/components/ProfileSetupModal.tsx": "Modal dialog for first-time user profile setup requiring name input.",
+  "frontend/src/components/LoginPrompt.tsx": "Landing page component displayed to unauthenticated users with hero image and login call-to-action.",
+  "frontend/src/pages/Dashboard.tsx": "Optimized dashboard with memoized transaction sorting, enhanced animations, better error handling with alerts, and smooth tab transitions for improved performance.",
+  "frontend/src/components/SummaryCards.tsx": "Three-card summary display showing total income, total expenses, and current balance with color-coded styling.",
+  "frontend/src/components/TransactionList.tsx": "Scrollable list component displaying all transactions with formatted dates, amounts, and transaction types.",
+  "frontend/src/components/AddTransactionForm.tsx": "Form component for adding new transactions with type selection, amount input, date picker, and description field.",
+  "frontend/src/index.css": "Enhanced global styles with custom animations (fade-in, slide-in variants), grid pattern utility, smooth scrolling, and optimized OKLCH color system for both light and dark modes.",
+  "frontend/src/pages/VersionTracker.tsx": "Enhanced version tracker with tabbed interface for list and timeline views, advanced filtering by type and search, sorting by date or version number, visual timeline with color-coded version types, and improved export functionality.",
+  "frontend/src/pages/Home.tsx": "Enhanced home page with gradient effects, animated sections, Version 5 badge, benefits showcase, and improved visual hierarchy with smooth transitions throughout.",
+  "frontend/src/pages/About.tsx": "Public about page describing KD Gold Pay's vision, mission, values, advantages as a digital payment solution, and company story.",
+  "frontend/src/pages/Services.tsx": "Public services page listing and detailing main services including secure payments, transaction management, financial tracking, and version history monitoring with additional features section.",
+  "frontend/src/pages/Contact.tsx": "Public contact page with contact form (submissions logged to console), company contact information cards, and map placeholder section.",
+  "frontend/src/components/AnalyticsCharts.tsx": "New component providing interactive financial analytics with bar charts for monthly income/expenses comparison, line charts for balance trends, pie charts for distribution, date range filters, and income/expense toggles with tooltips.",
+  "frontend/tailwind.config.js": "Extended Tailwind configuration with custom animations, additional box shadows, and enhanced keyframes for smooth transitions and production-ready UI polish."
+}

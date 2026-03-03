@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        --background: 0.99 0 0;
+        --foreground: 0.145 0 0;
+        --card: 1 0 0;
+        --card-foreground: 0.145 0 0;
+        --popover: 1 0 0;
+        --popover-foreground: 0.145 0 0;
+        --primary: 0.55 0.18 265;
+        --primary-foreground: 0.99 0 0;
+        --secondary: 0.96 0.01 265;
+        --secondary-foreground: 0.145 0 0;
+        --muted: 0.96 0 0;
+        --muted-foreground: 0.50 0 0;
+        --accent: 0.96 0.01 265;
+        --accent-foreground: 0.145 0 0;
+        --destructive: 0.58 0.22 25;
+        --destructive-foreground: 0.99 0 0;
+        --border: 0.92 0 0;
+        --input: 0.92 0 0;
+        --ring: 0.55 0.18 265;
+        --chart-1: 0.65 0.20 265;
+        --chart-2: 0.60 0.18 145;
+        --chart-3: 0.70 0.15 45;
+        --chart-4: 0.55 0.22 305;
+        --chart-5: 0.65 0.16 25;
+        --sidebar: 0.985 0 0;
+        --sidebar-foreground: 0.145 0 0;
+        --sidebar-primary: 0.55 0.18 265;
+        --sidebar-primary-foreground: 0.99 0 0;
+        --sidebar-accent: 0.96 0.01 265;
+        --sidebar-accent-foreground: 0.145 0 0;
+        --sidebar-border: 0.92 0 0;
+        --sidebar-ring: 0.55 0.18 265;
+    }
+
+    .dark {
+        --background: 0.12 0 0;
+        --foreground: 0.98 0 0;
+        --card: 0.16 0 0;
+        --card-foreground: 0.98 0 0;
+        --popover: 0.14 0 0;
+        --popover-foreground: 0.98 0 0;
+        --primary: 0.70 0.20 265;
+        --primary-foreground: 0.12 0 0;
+        --secondary: 0.22 0 0;
+        --secondary-foreground: 0.98 0 0;
+        --muted: 0.22 0 0;
+        --muted-foreground: 0.65 0 0;
+        --accent: 0.24 0.02 265;
+        --accent-foreground: 0.98 0 0;
+        --destructive: 0.62 0.24 25;
+        --destructive-foreground: 0.98 0 0;
+        --border: 0.28 0 0;
+        --input: 0.28 0 0;
+        --ring: 0.70 0.20 265;
+        --chart-1: 0.70 0.22 265;
+        --chart-2: 0.65 0.20 145;
+        --chart-3: 0.75 0.18 45;
+        --chart-4: 0.60 0.24 305;
+        --chart-5: 0.70 0.18 25;
+        --sidebar: 0.16 0 0;
+        --sidebar-foreground: 0.98 0 0;
+        --sidebar-primary: 0.70 0.20 265;
+        --sidebar-primary-foreground: 0.98 0 0;
+        --sidebar-accent: 0.24 0.02 265;
+        --sidebar-accent-foreground: 0.98 0 0;
+        --sidebar-border: 0.28 0 0;
+        --sidebar-ring: 0.70 0.20 265;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+
+    /* Smooth scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Grid pattern for hero sections */
+    .bg-grid-pattern {
+        background-image: linear-gradient(to right, oklch(var(--border)) 1px, transparent 1px),
+                          linear-gradient(to bottom, oklch(var(--border)) 1px, transparent 1px);
+        background-size: 4rem 4rem;
+    }
+
+    /* Custom animations */
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slide-in-from-bottom {
+        from {
+            transform: translateY(1rem);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slide-in-from-left {
+        from {
+            transform: translateX(-1rem);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slide-in-from-right {
+        from {
+            transform: translateX(1rem);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .animate-in {
+        animation-fill-mode: both;
+    }
+
+    .fade-in {
+        animation-name: fade-in;
+    }
+
+    .slide-in-from-bottom-2 {
+        animation-name: slide-in-from-bottom;
+        --tw-translate-y: 0.5rem;
+    }
+
+    .slide-in-from-bottom-4 {
+        animation-name: slide-in-from-bottom;
+        --tw-translate-y: 1rem;
+    }
+
+    .slide-in-from-left-8 {
+        animation-name: slide-in-from-left;
+        --tw-translate-x: -2rem;
+    }
+
+    .slide-in-from-right-4 {
+        animation-name: slide-in-from-right;
+        --tw-translate-x: 1rem;
+    }
+
+    .slide-in-from-right-8 {
+        animation-name: slide-in-from-right;
+        --tw-translate-x: 2rem;
+    }
+
+    .duration-300 {
+        animation-duration: 300ms;
+    }
+
+    .duration-500 {
+        animation-duration: 500ms;
+    }
+
+    .duration-700 {
+        animation-duration: 700ms;
+    }
+}
